@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Booking Form</title>
+</head>
+
+<body bgcolor="#f0f0f0">
+    <table width="650" align="center" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <img src="Фото.png" alt="Hotel" width="650">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                    <h1>Hotel Booking</h1>
+                    <p>
+                        <font color="gray">Special discounts for "Програмування для Інтернет" students</font>
+                    </p>
+                </center>
+                <form action="#" method="post">
+                    <table width="100%" border="0" cellpadding="8">
+                        <tr>
+                            <td width="50%">
+                                <b>Name</b>
+                                <table>
+                                    <tr>
+                                        <td><input type="text" name="first_name" required size="20"></td>
+                                        <td width="10"></td>
+                                        <td><input type="text" name="last_name" required size="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><small>
+                                                <font color="gray">First Name</font>
+                                            </small></td>
+                                        <td></td>
+                                        <td><small>
+                                                <font color="gray">Last Name</font>
+                                            </small></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td width="50%">
+                                <b>E-mail</b>
+                                <input type="email" name="email" placeholder="ex: myname@example.com" required size="30">
+                                <small>
+                                    <font color="gray">example@example.com</font>
+                                </small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="50%">
+                                <b>Room Type</b>
+                                <select name="room_type" required>
+                                    <option value="">Please Select</option>
+                                    <option value="standard">Standard</option>
+                                    <option value="deluxe">Luxe</option>
+                                </select> <br>
+                                <small>
+                                    <font color="white">_</font>
+                                </small>
+                            </td>
+
+                            <td width="50%">
+                                <b>Number of Guests</b>
+                                <input type="number" name="guests" placeholder="e.g., 4" min="1" max="10" required size="5"> <br>
+                                <small>
+                                    <font color="gray">(min 1, max 10)</font>
+                                </small>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>Arrival Date & Time</b>
+                    <table>
+                        <tr>
+                            <td><input type="date" name="arrival_date" value="2026-03-21" required></td>
+                            <td><input type="time" name="arrival_time" value="12:40" required></td>
+                            <td>
+                                <select name="arrival_period" required>
+                                    <option value="AM">AM</option>
+                                    <option value="PM" selected>PM</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><small>
+                                    <font color="gray">Hour Minutes</font>
+                                </small></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>Departure Date</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <select name="dep_month" required>
+                                    <option value="">Please select a month</option>
+                                    <option value="1">January</option>
+                                    <option value="3" selected>March</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="dep_day" required>
+                                    <option value="">Please select a day</option>
+                                    <option value="25" selected>25</option>
+                                </select>
+                            </td>
+                            <td>
+                                <select name="dep_year" required>
+                                    <option value="">Please select a year</option>
+                                    <option value="2026" selected>2026</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><small>
+                                    <font color="gray">Month</font>
+                                </small></td>
+                            <td><small>
+                                    <font color="gray">Day</font>
+                                </small></td>
+                            <td><small>
+                                    <font color="gray">Year</font>
+                                </small></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>Free Pickup?</b>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="radio" name="pickup" id="pickup_yes" value="yes" required>
+                                <label for="pickup_yes">Yes Please! - Pick me up on arrival</label>
+                            </td>
+                            <td width="20"></td>
+                            <td>
+                                <input type="radio" name="pickup" id="pickup_no" value="no">
+                                <label for="pickup_no">No Thanks - I'll make my own way there</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <br>
+                    <b>
+                        <font color="gray">Flight Number</font>
+                    </b>
+                    <input type="text" name="flight" required size="20">
+                    <br><br>
+                    <b>Meals</b> <br>
+                    <input type="checkbox" name="meal_breakfast" required> breakfast <br>
+                    <input type="checkbox" name="meal_lunch"> lunch <br>
+                    <input type="checkbox" name="meal_tea"> afternoon tea <br>
+                    <input type="checkbox" name="meal_dinner"> dinner <br>
+                    <br><br>
+                    <b>Special Requests</b>
+                    <textarea name="requests" rows="6" cols="40" required></textarea>
+                    <br><br>
+                    <center>
+                        <input type="submit" value="Submit">
+                    </center>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

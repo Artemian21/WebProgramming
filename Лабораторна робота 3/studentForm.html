@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Опитування студентів</title>
+</head>
+<body>
+    <h1>Опитування студентів щодо відвідування пар</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Особисті дані</legend>
+
+            <label for="surname">Прізвище:</label>
+            <input type="text" id="surname" name="surname" placeholder="Введіть прізвище" required>
+            <br><br>
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" placeholder="Введіть ім'я" required>
+            <br><br>
+
+            <label for="email">Корпоративна пошта:</label>
+            <input type="email" id="email" name="email" placeholder="example@stud.kai.edu.ua" required>
+            <br><br>
+
+            <label for="group">Група:</label>
+            <input type="text" id="group" name="group" placeholder="Наприклад: Б-121-23-4-ПІ" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Інформація про заняття</legend>
+
+            <label for="subject">Назва заняття:</label>
+            <input type="text" id="subject" name="subject" placeholder="Введіть назву заняття" required>
+            <br><br>
+
+            <label for="teacher">Викладач:</label>
+            <input type="text" id="teacher" name="teacher" placeholder="ФІО викладача" required>
+            <br><br>
+
+            <label>Тип заняття:</label>
+            <input type="radio" id="lecture" name="lesson_type" value="Лекція" required>
+            <label for="lecture">Лекція</label>
+            <input type="radio" id="practice" name="lesson_type" value="Практика">
+            <label for="practice">Практика</label>
+            <br><br>
+
+            <label for="date">Дата відвідування:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="comment">Коментар:</label>
+            <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Ваш коментар (необов'язково)"></textarea>
+        </fieldset>
+        
+        <br>
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>
