@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolidayTime — Особистий кабінет</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="HolidayTime">
+    </div>
+    <nav class="header__nav">
+      <a href="index.html" class="nav__link">ГОЛОВНА</a>
+      <span class="nav__divider">|</span>
+      <a href="about_us.html" class="nav__link">ПРО НАС</a>
+      <span class="nav__divider">|</span>
+      <a href="booking.html" class="nav__link">ЗАБРОНЮВАТИ</a>
+      <span class="nav__divider">|</span>
+      <a href="contacts.html" class="nav__link">КОНТАКТИ</a>
+      <span class="nav__divider">|</span>
+      <a href="account.html" class="nav__link nav__link--active">ОСОБИСТИЙ КАБІНЕТ</a>
+      <span class="nav__divider">|</span>
+      <div class="nav__lang">
+        <img src="images/globe.svg" alt="Мова">
+
+        <select class="nav__lang-select">
+          <option value="ua">UA</option>
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Заголовок сторінки -->
+  <section class="page-title-bar">
+    <h1 class="page-title-bar__title"><em>Особистий кабінет</em></h1>
+  </section>
+
+  <!-- Основний контент -->
+  <main class="cabinet-page">
+
+    <!-- Картка користувача -->
+    <section class="user-card">
+
+      <!-- Ліва частина профілю -->
+      <div class="user-card__left">
+        <div class="user-card__avatar">
+          <img src="images/avatar-placeholder.png" alt="Аватар користувача" class="user-card__avatar-img">
+        </div>
+        <button class="user-card__btn user-card__btn--avatar">Змінити аватар</button>
+        <button class="user-card__btn user-card__btn--settings">Налаштування</button>
+      </div>
+
+      <!-- Права частина з інформацією -->
+      <div class="user-card__right">
+        <h2 class="user-card__name">Петров Іван Іванович</h2>
+        <hr class="user-card__divider">
+
+        <p class="user-card__field"><strong><em>Стать:</em></strong> <em>чоловіча</em></p>
+        <hr class="user-card__divider">
+
+        <p class="user-card__field"><strong><em>Дата народження:</em></strong> <em>10. 02. 1998</em></p>
+        <hr class="user-card__divider">
+
+        <p class="user-card__field"><strong><em>Мобільний телефон:</em></strong> +38(097)346-72-50</p>
+        <hr class="user-card__divider">
+
+        <p class="user-card__field"><strong><em>Ел. пошта:</em></strong> <em>petrov@gmail.com</em></p>
+      </div>
+
+    </section>
+
+    <!-- Кнопка виходу -->
+    <div class="cabinet-logout">
+      <button class="btn-logout">Вийти</button>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__copy">© 2021 HolidayTime. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

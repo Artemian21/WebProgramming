@@ -1,0 +1,65 @@
+/* contacts.html — контакти */
+.contacts-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 48px 60px;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Row: телефон / графік / email */
+.contacts-row {
+  display: flex;
+  gap: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 700px;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 180px;
+}
+
+.contact-item__label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a4a5a;
+  border-bottom: 1.5px solid #4a4a5a;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+.contact-item__value {
+  font-size: 15px;
+  color: #2d2d2d;
+  line-height: 1.6;
+}
+
+.contacts-map {
+  flex: 1;
+  max-width: 700px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contacts-map iframe {
+  width: 100%;
+  height: 250px;
+  display: block;
+  justify-content: space-between;
+  border-radius: 15px;
+}
+
+/* Row: адреса + карта */
+.contacts-address-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
+}

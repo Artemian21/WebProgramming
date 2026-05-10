@@ -1,0 +1,142 @@
+/* booking.html */
+.booking-list {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28px 20px 48px;
+}
+
+/* Location filter (dropdown) */
+.location-filter {
+  position: relative;
+  background-color: #e5e6e8;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.location-filter__select {
+  width: 100%;
+  appearance: none;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #4a4a5a;
+  padding: 18px 52px 18px 24px;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+  text-align-last: center;
+}
+
+.location-filter__arrow {
+  position: absolute;
+  right: 24px;
+  font-size: 14px;
+  color: #4a4a5a;
+  pointer-events: none;
+}
+
+.location-filter__select option {
+  background-color: #a4a7ab;
+  color: #1a1a24;
+  font-style: italic;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Location list */
+.location-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Location card */
+.location-card {
+  background-color: #c8c9ce;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  min-height: 180px;
+}
+
+.location-card__img-wrap {
+  flex: 0 0 340px;
+}
+
+.location-card__img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+.location-card__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 28px 20px 28px;
+}
+
+.location-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.location-card__title {
+  font-size: 22px;
+  font-weight: 700;
+  font-style: italic;
+  color: #2a2a3a;
+}
+
+.location-card__fav {
+  font-size: 26px;
+  color: #aaaabc;
+  line-height: 1;
+  margin-top: 2px;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.location-card__fav:hover {
+  color: #f5c518;
+}
+
+.location-card__desc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: #4a4a5a;
+  background-color: #D7D7DD;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+}
+
+.location-card__footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.location-card__btn {
+  background-color: #1c2a45;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+}
+
+.location-card__btn:hover {
+  background-color: #2d3d61;
+}

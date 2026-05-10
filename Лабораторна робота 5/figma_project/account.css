@@ -1,0 +1,132 @@
+/* account.html — особистий кабінет */
+.cabinet-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+
+/* User card */
+.user-card {
+  background-color: #b8bbc8;
+  border-radius: 4px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Left column */
+.user-card__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.user-card__avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #d8d9de;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-card__avatar-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.user-card__btn {
+  width: 160px;
+  padding: 9px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.user-card__btn--avatar {
+  background-color: #5b6fa0;
+  color: #ffffff;
+}
+
+.user-card__btn--avatar:hover {
+  background-color: #2d3d61;
+}
+
+.user-card__btn--settings {
+  background-color: #1c2a45;
+  color: #ffffff;
+}
+
+.user-card__btn--settings:hover {
+  background-color: #2d3d61;
+}
+
+/* Right column */
+.user-card__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.user-card__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1c2a45;
+  margin-bottom: 10px;
+}
+
+.user-card__divider {
+  border: none;
+  border-top: 1px solid #a0a2b0;
+  margin: 10px 0;
+}
+
+.user-card__field {
+  font-size: 15px;
+  color: #4a4a5a;
+  font-style: italic;
+  padding: 4px 0;
+  line-height: 1.5;
+}
+
+.user-card__field strong {
+  font-style: italic;
+  color: #1c2a45;
+}
+
+/* Logout button */
+.cabinet-logout {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-logout {
+  background-color: #1c2a45;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 14px 80px;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: #2d3d61;
+}

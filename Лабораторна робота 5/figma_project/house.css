@@ -1,0 +1,272 @@
+/* house.html — бронювання будиночка (деталь) */
+.detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px 48px;
+}
+
+/* Back button */
+.back-wrap {
+  margin-bottom: 20px;
+}
+
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #1c2a45;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
+
+.btn-back:hover {
+  background-color: #2d3d61;
+}
+
+/* Gallery + desc block */
+.detail-gallery-block {
+  display: grid;
+  grid-template-columns: 4fr 3fr 3fr;
+  grid-template-areas: 
+    "left-top text text"
+    "left-bot right-bot1 right-bot2";
+  gap: 8px;
+  margin-bottom: 32px;
+  background-color: #c8c9ce;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+  display: block;
+}
+
+.img-top-left { grid-area: left-top; }
+.img-bot-left { grid-area: left-bot; }
+.img-bot-mid  { grid-area: right-bot1; }
+.img-bot-right{ grid-area: right-bot2; }
+
+/* Блок з текстом */
+.detail-desc {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  padding: 10px 24px;
+}
+
+.detail-desc p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4a5a;
+}
+
+/* Availability section */
+.availability {
+  background-color: #c8c9ce;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.availability__title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1c2a45;
+  padding: 20px;
+}
+
+.availability__form-block {
+  background-color: #d4d5d9;
+  margin: 0 16px 16px;
+  border-radius: 4px;
+  padding: 20px 24px;
+}
+
+.availability__question {
+  font-size: 15px;
+  color: #4a4a5a;
+  margin-bottom: 16px;
+}
+
+.availability__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Dates row */
+.availability__dates {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.date-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.date-field__label {
+  font-size: 13px;
+  color: #4a4a5a;
+  font-weight: 600;
+}
+
+.date-field__input-wrap {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #a0a2ae;
+  padding: 0 10px;
+  gap: 8px;
+  height: 42px;
+}
+
+.date-field__icon {
+  font-size: 16px;
+}
+
+.date-field__input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #888;
+  background: transparent;
+  width: 140px;
+}
+
+.date-field__arrow {
+  font-size: 12px;
+  color: #4a4a5a;
+}
+
+.availability__check-btn {
+  background-color: #1c2a45;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 4px;
+  line-height: 1.4;
+  text-align: center;
+  max-width: 200px;
+  align-self: flex-end;
+  transition: background-color 0.2s;
+}
+
+.availability__check-btn:hover {
+  background-color: #2d3d61;
+}
+
+/* Guests row */
+.availability__guests {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.spinner-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spinner-field__label {
+  font-size: 14px;
+  color: #4a4a5a;
+  font-weight: 600;
+}
+
+.spinner-field__input {
+  width: 60px;
+  height: 34px;
+  text-align: center;
+  border: 1px solid #a0a2ae;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+/* Rooms table */
+.rooms-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 4px;
+}
+
+.rooms-table__head {
+  background-color: #1c2a45;
+}
+
+.rooms-table__th {
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.rooms-table__row {
+  border-bottom: 1px solid #a0a2ae;
+}
+
+.rooms-table__td {
+  padding: 20px;
+  background-color: #d8d9de;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.rooms-table__td--guests {
+  text-align: center;
+  font-size: 22px;
+  white-space: nowrap;
+}
+
+.rooms-table__room-name {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2a2a3a;
+}
+
+.rooms-table__room-bed {
+  font-size: 14px;
+  color: #4a4a5a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rooms-table__price-btn {
+  background-color: #5b6fa0;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: background-color 0.2s;
+}
+
+.rooms-table__price-btn:hover {
+  background-color: #2d3d61;
+}

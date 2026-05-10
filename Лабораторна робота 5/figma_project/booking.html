@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HolidayTime — Забронювати будиночок</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.png" alt="HolidayTime">
+    </div>
+    <nav class="header__nav">
+      <a href="index.html" class="nav__link">ГОЛОВНА</a>
+      <span class="nav__divider">|</span>
+      <a href="about_us.html" class="nav__link">ПРО НАС</a>
+      <span class="nav__divider">|</span>
+      <a href="booking.html" class="nav__link nav__link--active">ЗАБРОНЮВАТИ</a>
+      <span class="nav__divider">|</span>
+      <a href="contacts.html" class="nav__link">КОНТАКТИ</a>
+      <span class="nav__divider">|</span>
+      <a href="account.html" class="nav__link">ОСОБИСТИЙ КАБІНЕТ</a>
+      <span class="nav__divider">|</span>
+      <div class="nav__lang">
+        <img src="images/globe.svg" alt="Мова">
+
+        <select class="nav__lang-select">
+          <option value="ua">UA</option>
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Заголовок сторінки -->
+  <section class="page-title-bar">
+    <h1 class="page-title-bar__title"><em>Забронювати будиночок</em></h1>
+  </section>
+
+  <!-- Основний контент -->
+  <main class="booking-list">
+
+    <!-- Фільтр вибору місця -->
+    <div class="location-filter">
+      <select class="location-filter__select">
+        <option value="" disabled selected>Оберіть місцерозташування</option>
+        <option value="bakota">Бакота</option>
+        <option value="karpaty">Карпати</option>
+        <option value="kyiv">Київ</option>
+        <option value="odesa">Одеська область</option>
+      </select>
+      <span class="location-filter__arrow">&#9660;</span>
+    </div>
+
+    <!-- Список локацій -->
+    <ul class="location-list">
+
+      <!-- Локація Бакота -->
+      <li class="location-card">
+        <div class="location-card__img-wrap">
+          <img src="images/bakota.png" alt="Незвідана Бакота" class="location-card__img">
+        </div>
+        <div class="location-card__info">
+          <div class="location-card__header">
+            <h2 class="location-card__title"><em>Незвідана Бакота</em></h2>
+            <button class="location-card__fav" aria-label="Додати до обраних">&#9733;</button>
+          </div>
+          <p class="location-card__desc">
+            У Хмельницькій області розташований загублений край - Бакота. Мальовничий каньйон з давньою
+            історією захоплює своїми просторами та незвичною атмосферою. Бджільництво, свіжий мед із
+            польових трав, дотик до природи.
+          </p>
+          <div class="location-card__footer">
+            <a href="house.html" class="location-card__btn">Детальніше</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Локація Карпати -->
+      <li class="location-card">
+        <div class="location-card__img-wrap">
+          <img src="images/karpaty.png" alt="Полонини Карпат" class="location-card__img">
+        </div>
+        <div class="location-card__info">
+          <div class="location-card__header">
+            <h2 class="location-card__title"><em>Полонини Карпат</em></h2>
+            <button class="location-card__fav" aria-label="Додати до обраних">&#9733;</button>
+          </div>
+          <p class="location-card__desc">
+            Полонини Карпат, у селі Орів посеред гір розташувався затишний куточок для незабутніх вражень.
+            Справжні українські гори, власноруч сироваріння на полонині, водоспади та вікові дерева чекають на Вас.
+          </p>
+          <div class="location-card__footer">
+            <a href="house.html" class="location-card__btn">Детальніше</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Локація Київщина -->
+      <li class="location-card">
+        <div class="location-card__img-wrap">
+          <img src="images/kyiv.png" alt="Автентична Київщина" class="location-card__img">
+        </div>
+        <div class="location-card__info">
+          <div class="location-card__header">
+            <h2 class="location-card__title"><em>Автентична Київщина</em></h2>
+            <button class="location-card__fav" aria-label="Додати до обраних">&#9733;</button>
+          </div>
+          <p class="location-card__desc">
+            Неподалік центра Києва розташувалось автентичне українське село на території села Пирогово.
+            Дерев'яні млини, запашний хліб, приготований своїми руками, українські пісні та багато іншого.
+          </p>
+          <div class="location-card__footer">
+            <a href="house.html" class="location-card__btn">Детальніше</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- Локація Одещина -->
+      <li class="location-card">
+        <div class="location-card__img-wrap">
+          <img src="images/odesa.png" alt="Нетипова Одещина" class="location-card__img">
+        </div>
+        <div class="location-card__info">
+          <div class="location-card__header">
+            <h2 class="location-card__title"><em>Нетипова Одещина</em></h2>
+            <button class="location-card__fav" aria-label="Додати до обраних">&#9733;</button>
+          </div>
+          <p class="location-card__desc">
+            В Одеській області знаходиться містечко Вилкове, яке називають українською Венецією.
+            Це місто на воді з каналами, де люди пересуваються човнами. Нетипова Україна, яка залишає враження.
+          </p>
+          <div class="location-card__footer">
+            <a href="house.html" class="location-card__btn">Детальніше</a>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </main>
+
+  <!-- Кнопка прокрутки вгору -->
+  <button class="scroll-top" aria-label="Прокрутити вгору">&#8679;</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__copy">© 2021 HolidayTime. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
